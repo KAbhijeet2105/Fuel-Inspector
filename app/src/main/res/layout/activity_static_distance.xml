@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="5dp"
+    tools:context=".StaticDistance">
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter following data"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/txtViewConsum"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+
+            android:hint="km/miles"
+            android:text="Consumption per 100(km/miles)"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editConsumption"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:hint="units"
+
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:text=""
+            tools:ignore="UnknownId" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost per unit of fuel"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editCostPerFuel"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="93dp"
+            android:layout_marginRight="20dp"
+            android:hint="cost"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:text="" />
+
+
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+
+        >
+
+        <ToggleButton
+            android:id="@+id/toggleMileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+            android:onClick="tog"
+            android:layout_marginTop="10dp"
+            android:textOn="Consumption"
+            android:textOff="Mileage"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Data"
+            android:layout_weight="0.25"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/UpperClear"
+            android:onClick="ClearConsumCostperUnit"
+            android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter data in one of the field"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance(km/miles)"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editDistance"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="20dp"
+            android:hint="km/mile"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The amount of money"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editMoney"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="20dp"
+            android:hint="Total Cost"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total fuel count"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/editTotalFuel"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127.7dp"
+            android:layout_marginRight="20dp"
+            android:hint="Fuel Units"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:text="" />
+
+
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Data"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+            android:id="@+id/btnBottomClear"
+            android:onClick="ClearDistanceMoneyTotFuel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <!--ads:adUnitId="ca-app-pub-3528391977169031/4499251474"-->
+
+
+
+<!--<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--android:id="@+id/AdviewStaticCalci"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:visibility="visible"-->
+<!--ads:adSize="BANNER"-->
+
+
+<!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+
+<!--</com.google.android.gms.ads.AdView>-->

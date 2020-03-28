@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp"
+    android:clickable="true"
+    app:cardBackgroundColor="#FFFFFF"
+    android:foreground="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#2fbaff"
+        >
+
+        <ImageView
+            android:id="@+id/imgvw"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_navigate_next_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dp"
+            android:background="#2fbaff"
+
+            />
+
+        <TextView
+            android:id="@+id/txtnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtdiscript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnm"
+            android:layout_alignParentLeft="true"
+
+            android:textColor="#ffffff"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="7dp"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

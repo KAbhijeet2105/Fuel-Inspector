@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fuel Inspector</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="types">
+        <item>--Expense Type--</item>
+
+        <item>Refueling</item>
+        <item>Toll tax</item>
+        <item>Maintenance</item>
+        <item>Oil Change</item>
+        <item>Others</item>
+
+    </string-array>
+
+</resources>

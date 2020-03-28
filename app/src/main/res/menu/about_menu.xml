@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/about_button"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="About us" />
+
+    <item android:title="Rate this App"
+          android:id="@+id/rateApp_button"
+
+        />
+
+    <item
+        android:title="Share this App"
+        app:showAsAction="always"
+        android:id="@+id/shareButton"
+        android:icon="@drawable/ic_share_black_24dp"
+        />
+
+
+</menu>

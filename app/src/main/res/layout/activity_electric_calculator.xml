@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="5dp"
+    android:fitsSystemWindows="true"
+    tools:context=".ElectricCalculator">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fill the following fields "
+            />
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+<TableLayout
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="3"
+    >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtELeCons"
+            android:layout_width="220dp"
+            android:layout_marginLeft="9dp"
+            android:text="Consumption per 100miles:" />
+
+        <EditText
+            android:id="@+id/eleConsumption"
+            android:layout_width="45dp"
+            android:hint="kWh"
+
+            android:inputType="numberDecimal"
+            android:text="" />
+
+
+    </TableRow>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+    <TableRow>
+
+        <TextView
+            android:layout_marginLeft="9dp"
+            android:layout_width="220dp"
+            android:text="Cost of electricity per unit:" />
+
+        <EditText
+            android:id="@+id/eleCostUnit"
+            android:layout_width="94dp"
+            android:inputType="numberDecimal"
+
+            android:hint="per unit"
+            android:text="" />
+
+
+
+    </TableRow>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+
+</TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ToggleButton
+            android:id="@+id/EleBtntoggleMileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+            android:onClick="togEle"
+            android:layout_marginTop="10dp"
+            android:textOn="Consumption"
+            android:textOff="Mileage"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            />
+        <Button
+            android:id="@+id/btnEleUpperClr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClearUpperUnits"
+            android:text="Clear"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+              android:layout_weight="0.25"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fill one of the following field "
+            />
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:stretchColumns="3"
+       android:fitsSystemWindows="true"
+       >
+
+       <TableRow android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_marginLeft="9dp"
+               android:layout_width="220dp"
+               android:text="Distance (miles):" />
+
+           <EditText
+               android:id="@+id/editEleDistance"
+               android:hint="miles"
+               android:inputType="numberDecimal"
+
+               android:maxLength="5"
+               android:text="" />
+
+
+
+       </TableRow>
+       <View
+
+           android:layout_width="match_parent"
+           android:layout_height="3px"
+           android:background="#000000"
+           />
+       <TableRow>
+
+           <TextView
+               android:layout_marginLeft="9dp"
+               android:layout_width="220dp"
+               android:text="The amount of money:" />
+
+           <EditText
+               android:id="@+id/editEleMoney"
+               android:layout_width="wrap_content"
+               android:hint="Total Cost"
+               android:inputType="numberDecimal"
+
+               android:maxLength="6"
+               android:text="" />
+
+       </TableRow>
+       <View
+
+           android:layout_width="match_parent"
+           android:layout_height="3px"
+           android:background="#000000"
+           />
+       <TableRow>
+
+           <TextView
+               android:layout_marginLeft="9dp"
+               android:layout_width="220dp"
+               android:text="Total Units of Elecricity:" />
+
+           <EditText
+               android:id="@+id/editEleTotCost"
+               android:text=""
+               android:inputType="numberDecimal"
+
+               android:hint="kWh"
+               android:maxLength="5"
+               />
+
+
+       </TableRow>
+       <View
+
+           android:layout_width="match_parent"
+           android:layout_height="3px"
+           android:background="#000000"
+           />
+   </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClearDownUnit"
+            android:text="Clear Data"
+            android:background="@drawable/custom_buttons"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#000000"
+        />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+
+    <!--ads:adUnitId="ca-app-pub-3528391977169031/9883440098"-->
+
+
+
+
+<!--<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--android:id="@+id/AdviewEleCalci"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_centerHorizontal="true"-->
+<!--android:visibility="visible"-->
+<!--ads:adSize="BANNER"-->
+
+<!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+
+<!--</com.google.android.gms.ads.AdView>-->
+
+
